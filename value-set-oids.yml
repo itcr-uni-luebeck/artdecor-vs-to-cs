@@ -1,0 +1,242 @@
+IHEXDSauthorRole v2:
+  oid: 1.2.276.0.76.11.30
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.30&effectiveDate=2018-07-13T13:12:46&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDSauthorRole
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.13, Prozessrollen für Autoren]
+    - [1.3.6.1.4.1.19376.3.276.1.5.14, Patientenbeziehungsrollen für Autoren]
+
+IHEXDSauthorSpeciality v2:
+  oid: 1.2.276.0.76.11.31
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.31&effectiveDate=2018-07-13T13:22:08&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDSauthorSpeciality
+  includes:
+    - [1.2.276.0.76.5.114, S_BAR2_WBO]
+    - [1.3.6.1.4.1.19376.3.276.1.5.11, Qualifikationen nicht ärztlicher Autoren]
+
+IHEXDSauthorSpeciality v3-draft:
+  oid: 1.2.276.0.76.11.31
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.31&effectiveDate=2019-02-15T09:35:19&language=de-DE
+  version: v3-draft
+  canonical: http://ihe-d.de/ValueSets/IHEXDSauthorSpeciality
+  includes:
+    - [1.2.276.0.76.5.514, Facharzttitel der Ärztekammern]:
+        - not in v2
+    - [1.2.276.0.76.5.492, Qualifikatoren zahnärztlicher Autoren]:
+        - not in v2
+    - [1.2.276.0.76.5.493, Ärtzliche Berufsvarianten]:
+        - not in v2
+    - [1.3.6.1.4.1.19376.3.276.1.5.11, Qualifikationen nicht ärztlicher Autoren]
+
+IHEXDSclassCode v2:
+  oid: 1.2.276.0.76.11.32
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.32&effectiveDate=2018-07-13T13:23:15&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDSclassCode
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.8, Dokumentenklassen]
+    - [2.16.840.1.113883.6.1, LOINC]
+
+IHEXDSclassCode v3-draft:
+  oid: 1.2.276.0.76.11.32
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.32&effectiveDate=2020-09-18T15:14:43&language=de-DE
+  version: v3-draft
+  canonical: http://ihe-d.de/ValueSets/IHEXDSclassCode
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.8, Dokumentenklassen]
+    - [2.16.840.1.113883.6.1, LOINC]
+
+IHEXDScodeList:
+  oid: 1.2.276.0.76.11.40
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.40&effectiveDate=2018-07-13T13:27:21&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDScodeList
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.7, Ordnertypen]
+
+IHEXDSconfidentialityCode:
+  oid: 1.2.276.0.76.11.33
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.33&effectiveDate=2018-07-13T13:27:59&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDSconfidentialityCode
+  includes:
+    - [
+        1.3.6.1.4.1.19376.3.276.1.5.10,
+        Betroffeneneinschätzung der Vertraulichkeitsstufe,
+      ]
+    - [
+        2.16.840.1.113883.5.25,
+        http://terminology.hl7.org/CodeSystem/v3-Confidentiality,
+      ]
+
+IHEXDScontentTypeCode:
+  oid: 1.2.276.0.76.11.39
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.39&effectiveDate=2018-07-13T13:28:16&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDScontentTypeCode
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.12, Grund der Übermittlung]
+
+IHEXDSeventCodeList v2:
+  oid: 1.2.276.0.76.11.34
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.34&effectiveDate=2020-10-02T13:42:55&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDSeventCodeList
+  includes:
+    - [1.2.840.10065.1.12, SignatureTypeCodes]
+    - [1.2.840.10008.6.1.19, DICOM PS3.16 CID 29 Acquisition Modality]
+    - [1.2.840.10008.6.1.2, DICOM PS3.16 CID 3 Anatomic Region]
+    - [1.3.6.1.4.1.19376.3.276.1.5.15, Dokumenten-Warnhinweise]
+    - [1.3.6.1.4.1.19376.3.276.1.5.16, Fallkontext bei Dokumentenerstellung]
+    - [1.3.6.1.4.1.19376.1.2.3, DocumentReference Format Code Set]
+
+IHEXDSeventCodeList v3-draft:
+  oid: 1.2.276.0.76.11.34
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.34&effectiveDate=2020-10-02T13:45:25&language=de-DE
+  version: v3-draft
+  canonical: http://ihe-d.de/ValueSets/IHEXDSeventCodeList
+  includes:
+    - [1.2.276.0.76.11.465, Klinische Dokumentenliste KDL 2020]:
+        - not in v2
+    - [1.2.840.10065.1.12, SignatureTypeCodes]
+    - [1.2.840.10008.6.1.19, DICOM PS3.16 CID 29 Acquisition Modality]
+    - [1.2.840.10008.6.1.2, DICOM PS3.16 CID 3 Anatomic Region]
+    - [1.3.6.1.4.1.19376.3.276.1.5.15, Dokumenten-Warnhinweise]
+    - [1.3.6.1.4.1.19376.3.276.1.5.16, Fallkontext bei Dokumentenerstellung]
+    - [1.3.6.1.4.1.19376.1.2.3, DocumentReference Format Code Set]
+
+IHEXDSformatCodeDE v2:
+  oid: 1.2.276.0.76.11.35
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.35&effectiveDate=2018-07-13T16:16:59&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDSformatCodeDE
+  includes:
+    - [1.3.6.1.4.1.19376.1.2.3, DocumentReference Format Code Set]
+    - [1.2.840.10008.2.6.1, DICOM UID]
+    - [1.3.6.1.4.1.19376.3.276.1.5.6, Deutsche Dokumentenformate]
+
+IHEXDSformatCodeDE v3-draft:
+  oid: 1.2.276.0.76.11.35
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.35&effectiveDate=2018-12-14T17:07:12&language=de-DE
+  version: v3-draft
+  canonical: http://ihe-d.de/ValueSets/IHEXDSformatCodeDE
+  includes:
+    - [1.3.6.1.4.1.19376.1.2.3, DocumentReference Format Code Set]
+    - [1.2.840.10008.2.6.1, DICOM UID]
+    - [1.3.6.1.4.1.19376.3.276.1.5.6, Deutsche Dokumentenformate]
+
+IHEXDSformatCodeINTL:
+  oid: 1.2.276.0.76.11.71
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.71&effectiveDate=2018-07-13T17:06:39&language=de-DE
+  version: v2
+  canonical: null
+  includes:
+    - [1.3.6.1.4.1.19376.1.2.3, DocumentReference Format Code Set]
+    - [1.2.840.10008.2.6.1, DICOM UID]
+
+IHEXDShealthcareFacilityTypeCode:
+  oid: 1.2.276.0.76.11.36
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.36&effectiveDate=2018-10-01T18:33:06&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDShealthcareFacilityTypeCode
+  includes:
+    - [
+        1.3.6.1.4.1.19376.3.276.1.5.2,
+        Einrichtungsarten der patientenbezogenen Gesundheitsversorgung,
+      ]
+    - [
+        1.3.6.1.4.1.19376.3.276.1.5.3,
+        Einrichtungsarten ausserhalb der patientenbezogenen Gesundheitsversorgung,
+      ]
+
+IHEXDShealthcareFacilityTypeCodeOutsidePatientReleatedHealthcare:
+  oid: 1.2.276.0.76.11.59
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.59&effectiveDate=2018-07-13T16:21:25&language=de-DE
+  version: v2
+  canonical: null
+  includes:
+    - [
+        1.3.6.1.4.1.19376.3.276.1.5.3,
+        Einrichtungsarten ausserhalb der patientenbezogenen Gesundheitsversorgung,
+      ]
+
+IHEXDShealthcareFacilityTypeCodePatientReleatedHealthcare:
+  oid: 1.2.276.0.76.11.58
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.59&effectiveDate=2018-07-13T16:21:25&language=de-DE
+  version: v2
+  canonical: null
+  includes:
+    - [
+        1.3.6.1.4.1.19376.3.276.1.5.2,
+        Einrichtungsarten der patientenbezogenen Gesundheitsversorgung,
+      ]
+
+IHEXDSpracticeSettingCode v2:
+  oid: 1.2.276.0.76.11.37
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.37&effectiveDate=2018-10-01T18:31:24&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.4, Ärztliche Fachrichtungen]
+    - [1.3.6.1.4.1.19376.3.276.1.5.5, Nicht-ärztliche Fachrichtungen]
+
+IHEXDSpracticeSettingCode v3-draft:
+  oid: 1.2.276.0.76.11.37
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.37&effectiveDate=2019-05-17T13:46:31&language=de-DE
+  version: v3-draft
+  canonical: http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.4, Ärztliche Fachrichtungen]
+    - [1.3.6.1.4.1.19376.3.276.1.5.5, Nicht-ärztliche Fachrichtungen]
+
+IHEXDStypeCode v2:
+  oid: 1.2.276.0.76.11.38
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.38&effectiveDate=2020-02-07T07:55:58&language=de-DE
+  version: v2
+  canonical: http://ihe-d.de/ValueSets/IHEXDStypeCode
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.9, Dokumententypen]
+    - [2.16.840.1.113883.6.1, LOINC]
+
+IHEXDStypeCode v3-draft:
+  oid: 1.2.276.0.76.11.38
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.38&effectiveDate=2020-02-07T07:55:58&language=de-DE
+  version: v3-draft
+  canonical: http://ihe-d.de/ValueSets/IHEXDStypeCode
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.9, Dokumententypen]
+    - [2.16.840.1.113883.6.1, LOINC]
+
+IHEXDSpracticeSettingCodedoctoral v2:
+  oid: 1.2.276.0.76.11.69
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.69&effectiveDate=2019-04-05T08:35:59&language=de-DE
+  version: v2
+  canonical: null
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.4, Ärztliche Fachrichtungen]
+
+IHEXDSpracticeSettingCodedoctoral v3-draft:
+  oid: 1.2.276.0.76.11.69
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.69&effectiveDate=2019-04-05T08:35:59&language=de-DE
+  version: v3-draft
+  canonical: null
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.4, Ärztliche Fachrichtungen]
+
+IHEXDSpracticeSettingCodenondoctoral v2:
+  oid: 1.2.276.0.76.11.70
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.70&effectiveDate=2018-07-13T16:22:41&language=de-DE
+  version: v2
+  canonical: null
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.5, Nicht-ärztliche Fachrichtungen]
+
+IHEXDSpracticeSettingCodenondoctoral v3-draft:
+  oid: 1.2.276.0.76.11.70
+  artdecor: https://art-decor.org/art-decor/decor-valuesets--ihede-?id=1.2.276.0.76.11.70&effectiveDate=2020-08-07T06:26:12&language=de-DE
+  version: v3-draft
+  canonical: null
+  includes:
+    - [1.3.6.1.4.1.19376.3.276.1.5.5, Nicht-ärztliche Fachrichtungen]

@@ -18,7 +18,7 @@
       "program": "${file}",
       "console": "integratedTerminal",
       "args": [
-        "--artdecor=/home/joshua/Downloads/ihe-vs/IHEXDSauthorRole_v2.json",
+        "--artdecor=/home/joshua/Downloads/ihe-vs/vs/IHEXDSpracticeSettingCodedoctoral_v2.json",
         "--artdecor-from-file",
         "--output-dir=./output"
       ]

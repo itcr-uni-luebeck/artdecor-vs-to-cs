@@ -165,3 +165,5 @@ pip-selfcheck.json
 # End of https://www.toptal.com/developers/gitignore/api/python,virtualenv,vscode
 
 output
+other_code_systems
+convert-all.sh

@@ -73,6 +73,7 @@ def initialize_code_system(jcs: ArtDecorCodeSystem, version: str, vs_date: str) 
 
 def filter_code_system(jcs: ArtDecorCodeSystem) -> bool:
     """decide if the code system is relevant to conversion. E.g. LOINC should not be generated from the ArtDecor ValueSets, but retrieved from the provider.
+    Uses (some OIDs from) the list from http://hl7.org/fhir/terminologies-systems.html
 
     Args:
         jcs (ArtDecorCodeSystem): the Art decor code system json
@@ -81,8 +82,14 @@ def filter_code_system(jcs: ArtDecorCodeSystem) -> bool:
         bool: true if the cs should be filtered for conversion
     """
     filterable_oids = {"2.16.840.1.113883.6.1": "LOINC",
-                       "2.16.840.1.113883.5.25": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"}
-    if jcs.oid in filterable_oids.keys():
+                       "2.16.840.1.113883.6.96": "SNOMED CT",
+                       "2.16.840.1.113883.6.8": "UCUM",
+                       "2.16.840.1.113883.6.88": "RxNorm",
+                       "2.16.840.1.113883.5.25": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                       "1.2.840.10008": "DICOM DCM and DCM-based ValueSets",
+                       "1.3.6.1.4.1.19376.1.2.3": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"
+                       }
+    if any(jcs.oid.startswith(f) for f in filterable_oids.keys()):
         return True
     return False
 
@@ -90,19 +97,22 @@ def filter_code_system(jcs: ArtDecorCodeSystem) -> bool:
 def designation_for_ad_concept(adc: Dict) -> Dict:
     def get_display(desi):
         if "#text" in desi:
-            return re.sub(r'&lt;.*&gt;', "", desi["#text"])
+            return re.sub(r'&lt;.*&gt;', "", desi["#text"]).strip()
         elif "displayName" in desi:
-            return desi["displayName"]
+            return desi["displayName"].strip()
+
     if "desc" in adc:
         return [{
             "language": des["language"],
             "value": get_display(des)
-        } for des in adc["desc"]]
+        } for des in adc["desc"] if get_display(des) != '']
     elif "designation" in adc:
         return [{
             "language": des["language"],
             "value": get_display(des)
-        } for des in adc["designation"]]
+        } for des in adc["designation"] if get_display(des) != '']
+    else:
+        return None
 
 
 def prompt_for_parent_code(concept: Dict, concept_list: List[Dict]) -> str:
@@ -154,7 +164,7 @@ def get_user_prompt(choices: List[Dict], prompt: str = "your choice?") -> Dict:
     return choices[user_choice]
 
 
-def convert_to_fhir_codesystems(j: Dict):
+def convert_to_fhir_codesystems(j: Dict, behaviour: str):
     """convert the ArtDecor ValueSet to FHIR R4 code systems
 
     Args:
@@ -175,6 +185,11 @@ def convert_to_fhir_codesystems(j: Dict):
         oid: advs for oid, advs in all_present_code_systems.items() if not filter_code_system(advs)}
     click.echo("The following code systems should be converted:")
     click.echo(present_code_systems)
+    click.echo("")
+
+    previous_codes = {
+        oid: {} for oid in present_code_systems.keys()
+    }
 
     fhir_code_systems = {
         oid:
@@ -182,31 +197,65 @@ def convert_to_fhir_codesystems(j: Dict):
         for oid, advs in present_code_systems.items()
     }
 
+    fhir_codesystem_has_deprecated_codes = {
+        oid: False for oid in present_code_systems.keys()
+    }
+
     concept_list = vs["conceptList"][0]["concept"]
     for concept in concept_list:
-        oid_of_code_system = concept["codeSystem"]
+        c_oid = concept["codeSystem"]
+        if c_oid not in present_code_systems:
+            continue
+        c_level = int(concept["level"])
+        c_type = concept["type"]
+        c_code = concept["code"]
+        c_display = concept["displayName"]
         dic = {
-            "code": concept["code"],
-            "display": concept["displayName"],
-            "designation": designation_for_ad_concept(concept),
+            "code": c_code,
+            "display": c_display,
         }
+        designation = designation_for_ad_concept(concept)
+        if designation is not None and len(designation) > 0:
+            dic["designation"] = designation
         properties = []
-        if concept["level"] != "0":
-            parent_code = prompt_for_parent_code(concept, concept_list)
+        previous_codes[c_oid][c_level] = (c_code, c_display)
+
+        if c_level != 0:
+            if behaviour == "prompt":
+                parent_code = prompt_for_parent_code(concept, concept_list)
+            else:
+                if c_level - 1 in previous_codes[c_oid]:
+                    parent_code, parent_display = previous_codes[c_oid][c_level - 1]
+                    click.echo(
+                        f"'{parent_code}'='{parent_display}' subsumes '{c_code}'='{c_display}' in {c_oid}")
+                else:
+                    click.echo(
+                        "no known parent for the following code, please select.")
+                    parent_code = prompt_for_parent_code(concept, concept_list)
             properties.append({
                 "code": "parent",
                 "valueCode": parent_code
             })
-        if concept["type"] == "D":
+        if c_type == "D":
             properties.append({
                 "code": "deprecated",
                 "valueBoolean": False
             })
+            fhir_codesystem_has_deprecated_codes[c_oid] = True
         if len(properties) > 0:
-            concept["property"] = properties
+            dic["property"] = properties
         fhir_concept = CodeSystemConcept(**dic)
-        fhir_code_systems[oid_of_code_system].concept.append(fhir_concept)
+        fhir_code_systems[c_oid].concept.append(fhir_concept)
     click.echo("\n")
+    for oid, cs in fhir_code_systems.items():
+        if fhir_codesystem_has_deprecated_codes[oid]:
+            cs.property = [
+                CodeSystemProperty(**{
+                    "code": "deprecated",
+                    "description": "whether the concept is deprecated",
+                    "type": "boolean"
+                })
+            ]
     return fhir_code_systems
 
 
@@ -237,14 +286,21 @@ def download_from_art_decor(artdecor: str, artdecor_from_file: bool):
 
 
 def validate_attributes_match(existing_cs: CodeSystem, new_cs: CodeSystem):
-    attributes = ["id", "url", "valueSet", "version", "title", "status"]
+    attributes = ["id", "url", "valueSet", "version", "status"]
+    existing_dict = existing_cs.dict()
+    new_dict = new_cs.dict()
     errors = []
     for attr in attributes:
-        existing_attr = existing_cs.dict()[attr]
-        new_attr = new_cs.dict()[attr]
-        if existing_attr != new_attr:
-            errors.append(
-                f"mismatch in attribute '{attr}': old '{existing_attr}', new '{new_attr}'")
+        if attr not in existing_dict:
+            errors.append(f"missing attribute {attr} in existing CodeSystem")
+        if attr not in new_dict:
+            errors.append(f"missing attribute {attr} in new CodeSystem")
+        if attr in existing_dict and attr in new_dict:
+            existing_attr = existing_dict[attr]
+            new_attr = new_dict[attr]
+            if existing_attr != new_attr:
+                errors.append(
+                    f"mismatch in attribute '{attr}': old '{existing_attr}', new '{new_attr}'")
     return errors
 
 
@@ -315,8 +371,8 @@ def merge_fhir_json(filepath: str, new_cs: CodeSystem):
         if old_parent != None and new_parent == None or old_parent == None and new_parent != None:
             merge_errors.append(
                 f"unhandled parent for code '{code}' in only one code system, please handle.")
-        elif old_parent != None and new_parent != None:
-            if old_parent.valueCode != new_parent.valueCode:
+        elif old_parent != None and new_parent != None and len(old_parent) > 0 and len(new_parent) > 0:
+            if old_parent[0].valueCode != new_parent[0].valueCode:
                 merge_errors.append(
                     f"code '{code}' has different parent value, old '{old_parent.valueCode}' vs new '{new_parent.valueCode}'")
     if len(merge_errors) > 0:
@@ -362,15 +418,28 @@ def json_serial(obj):
                help="The link to the JSON file in ArtDecor to convert"
                )
 @ click.option("--artdecor-from-file",
-               is_flag=True)
+               is_flag=True,
+               help="if this flag is passed, the --artdecor parameter is interpretet as an (absolute) path")
 @ click.option("--output-dir",
                type=click.Path(exists=True, file_okay=False,
                                dir_okay=True, writable=True,
                                resolve_path=True),
+               help="the directory where the code system(-s) should be written to",
                prompt="output directory?")
-def cli(artdecor, artdecor_from_file, output_dir):
+@ click.option("--prompt-for-parent",
+               "behaviour",
+               flag_value="prompt",
+               help="prompt for parents instead of assuming the structure of the JSON",
+               )
+@ click.option("--auto-parent",
+               "behaviour",
+               flag_value="auto",
+               help="assume that the parent codes always come before the child codes in the ArtDecor JSON (default option)",
+               default="true"
+               )
+def cli(artdecor, artdecor_from_file, output_dir, behaviour):
     json = download_from_art_decor(artdecor, artdecor_from_file)
-    converted = convert_to_fhir_codesystems(json)
+    converted = convert_to_fhir_codesystems(json, behaviour)
     write_to_files(json, converted, output_dir)
 
 

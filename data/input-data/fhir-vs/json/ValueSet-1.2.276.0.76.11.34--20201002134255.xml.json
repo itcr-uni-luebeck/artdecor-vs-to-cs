@@ -1,0 +1,350 @@
+{
+    "resourceType": "ValueSet",
+    "id": "1.2.276.0.76.11.34--20201002134255",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {
+                "start": "2020-10-02T13:42:55+01:00"
+            }
+        }
+    ],
+    "url": "http://ihe-d.de/ValueSets/IHEXDSeventCodeList",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://art-decor.org/ns/oids/vs",
+            "value": "1.2.276.0.76.11.34"
+        }
+    ],
+    "version": "2020-10-02T13:42:55",
+    "name": "IHEXDSeventCodeList",
+    "title": "IHE XDS eventCodeList",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "IHE Deutschland e.V.",
+    "description": "**eventCodeList (XDSDocumentEntry)**\n\r\nThis list of codes represents the main clinical acts being documented in an XDS Document.",
+    "immutable": false,
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/ValueSet/signature-type"
+            },
+            {
+                "valueSet": "urn:oid:1.2.840.10008.6.1.19"
+            },
+            {
+                "valueSet": "urn:oid:1.2.840.10008.6.1.2"
+            },
+            {
+                "system": "http://ihe-d.de/CodeSystems/DokumentenWarnhinweise"
+            },
+            {
+                "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"
+            },
+            {
+                "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+                "concept": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Ambulanter Kontakt in beliebiger Einrichtung mit Teilnahme an der ambulanten Versorgung"
+                            }
+                        ],
+                        "code": "E100",
+                        "display": "ambulanter Kontakt"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Ambulant durchgef\u00fchrte OP in beliebiger Einrichtung mit ambulant operativer Versorgung"
+                            }
+                        ],
+                        "code": "E110",
+                        "display": "ambulante OP"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Voll-, teil- oder nachstation\u00e4re Behandlung in einer Einrichtung mit Teilnahme an der station\u00e4ren Versorgung"
+                            }
+                        ],
+                        "code": "E200",
+                        "display": "station\u00e4rer Aufenthalt"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Aufnahme zur voll-, teil- oder nachstation\u00e4ren Behandlung in eine Einrichtung mit Teilnahme an der station\u00e4ren Versorgung"
+                            }
+                        ],
+                        "code": "E210",
+                        "display": "station\u00e4re Aufnahme"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Aufnahme in vollstation\u00e4re Krankenhausbehandlung; einschlie\u00dflich vollstation\u00e4re Behandlung mit vorausgegangener vorstation\u00e4rer Behandlung"
+                            }
+                        ],
+                        "code": "E211",
+                        "display": "Aufnahme vollstation\u00e4r"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Aufnahme/Wiederaufnahme in teilstation\u00e4re Krankenhausbehandlung: Kontakt im Rahmen einer teilstation\u00e4ren Behandlung; einschlie\u00dflich Tagesklinik"
+                            }
+                        ],
+                        "code": "E212",
+                        "display": "Aufnahme/Wiederaufnahme teilstation\u00e4r"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Aufnahme zur station\u00e4ren Entbindung"
+                            }
+                        ],
+                        "code": "E213",
+                        "display": "Aufnahme Entbindung station\u00e4r"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Aufnahme eines Neugeborenen bei station\u00e4rer Entbindung"
+                            }
+                        ],
+                        "code": "E214",
+                        "display": "Aufnahme eines Neugeborenen"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Station\u00e4re Aufnahme zur Organentnahme"
+                            }
+                        ],
+                        "code": "E215",
+                        "display": "Aufnahme des Spenders zur Organentnahme"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Entlassung nach voll-, teil- oder nachstation\u00e4rer Behandlung aus einer Einrichtung mit Teilnahme an der station\u00e4ren Versorgung"
+                            }
+                        ],
+                        "code": "E230",
+                        "display": "station\u00e4re Entlassung"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Entlassung aus station\u00e4rem Aufenthalt nach Hause: Routineentlassung (Behandlung regul\u00e4r beendet); Behandlung gegen \u00e4rztlichen Rat beendet; Behandlung aus sonstigen Gr\u00fcnden beendet. Einschlie\u00dflich Entlassung mit geplanter ambulanter Weiterbehandlung. Einschlie\u00dflich Entlassung in organisierte h\u00e4usliche Pflege"
+                            }
+                        ],
+                        "code": "E231",
+                        "display": "station\u00e4re Entlassung nach Hause"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Entlassung aus station\u00e4rem Aufenthalt in eine Rehabilitationseinrichtung"
+                            }
+                        ],
+                        "code": "E232",
+                        "display": "station\u00e4re Entlassung in eine Rehabilitationseinrichtung"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Entlassung aus station\u00e4rem Aufenthalt in eine Pflegeeinrichtung oder ein Hospiz"
+                            }
+                        ],
+                        "code": "E233",
+                        "display": "station\u00e4re Entlassung in eine Pflegeeinrichtung/Hospiz"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Entlassung aus station\u00e4rem Aufenthalt, nachstation\u00e4re Behandlung vorgesehen: Behandlung regul\u00e4r oder gegen \u00e4rztlichen Rat beendet mit geplanter nachstation\u00e4rer Behandlung"
+                            }
+                        ],
+                        "code": "E234",
+                        "display": "Entlassung zur nachstation\u00e4ren Behandlung"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Patient w\u00e4hrend station\u00e4rem Aufenthalt verstorben"
+                            }
+                        ],
+                        "code": "E235",
+                        "display": "Patient w\u00e4hrend station\u00e4rem Aufenthalt verstorben"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Verlegung im Verlauf oder bei Abschluss eines station\u00e4ren Aufenthaltes"
+                            }
+                        ],
+                        "code": "E250",
+                        "display": "station\u00e4re Verlegung"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Verlegung innerhalb einer station\u00e4ren Einrichtung (\"interne station\u00e4re Verlegung\")"
+                            }
+                        ],
+                        "code": "E251",
+                        "display": "Verlegung innerhalb eines Krankenhauses"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Verlegung in ein anderes Krankenhaus (\"externe station\u00e4re Verlegung\")"
+                            }
+                        ],
+                        "code": "E252",
+                        "display": "Verlegung in ein anderes Krankenhaus"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Verlegung zur psychiatrischen Behandlung in eine andere Einrichtung"
+                            }
+                        ],
+                        "code": "E253",
+                        "display": "externe Verlegung in Psychiatrie"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Entlassung mit geplanter nachfolgender station\u00e4rer Wiederaufnahme in derselben Einrichtung, z.B. Unterbrechung gegen \u00e4rztlichen Rat"
+                            }
+                        ],
+                        "code": "E270",
+                        "display": "kurzzeitige Unterbrechung einer station\u00e4ren Behandlung"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Konsiliarische Mitbehandlung im Verlauf eines station\u00e4ren Aufenthaltes oder im ambulanten Kontext, ohne Verlegung"
+                            }
+                        ],
+                        "code": "E280",
+                        "display": "Konsil"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Behandlung/ Monitoring im h\u00e4uslichen Umfeld"
+                            }
+                        ],
+                        "code": "E300",
+                        "display": "Behandlung im h\u00e4uslichen Umfeld"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Behandlung/ Monitoring \u00fcber virtuellen Patientenkontakt z.B. telemedizinischer Patientenkontakt"
+                            }
+                        ],
+                        "code": "E400",
+                        "display": "Virtual Encounter"
+                    }
+                ]
+            },
+            {
+                "system": "http://ihe-d.de/CodeSystems/DokumentenWarnhinweise",
+                "concept": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Dokumente, die der Patient zu seinem Arzt oder in die Klinik mitgebracht hat und die dort eingescannt wurden. Die Dokumente k\u00f6nnen von Medizinern und anderen Leistungserbringern, von anderen Autoren wie z.B. Beh\u00f6rden/Krankenkassen/Schulen oder vom Patienten selbst erstellt worden sein."
+                            }
+                        ],
+                        "code": "H1",
+                        "display": "vom Patienten mitgebracht"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Der Hinweis gibt Auskunft dar\u00fcber, ob das Dokument zum Zeitpunkt des Einstellens bereits mit dem Patienten besprochen wurde. Dies kann genutzt werden um zu verhindern, dass der Patient sensible Informationen, wie die Diagnose einer unheilbaren Krankheit, aus einem Dokument anstatt von seinem Arzt erf\u00e4hrt. Dabei liegt der Fokus auf der Frage, ob das Dokument noch mit dem Patienten besprochen werden muss und nicht wer es noch mit dem Patienten besprechen muss. Somit k\u00f6nnen auch einrichtungs\u00fcbergreifende Szenarien unterst\u00fctzt werden, z.B. wenn die Besprechung des Befundes nicht in der Hand des Erzeugers liegt."
+                            }
+                        ],
+                        "code": "H2",
+                        "display": "noch nicht mit Patient besprochen"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Der Hinweis zeigt an, dass es sich eventuell um veraltete Daten handelt. Dieses Kennzeichen wird \u00fcblicherweise nachtr\u00e4glich zu schon registrierten Dokumenten hinzugef\u00fcgt. Im Gegensatz zum availabilityStatus \"Deprecated\" ist es unklar ob das Dokument wirklich veraltet ist oder nicht. Daher handelt es sich hier nur um einen Hinweis f\u00fcr den Empf\u00e4nger, der \u00fcblicherweise keine automatischen Auswirkungen auf Berechtigungen, Speicherfristen, etc. hat."
+                            }
+                        ],
+                        "code": "H3",
+                        "display": "eventuell veraltete Daten"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Der Hinweis zeigt an, dass es sich um ein vorl\u00e4ufiges Dokument handelt. IHE XDS sieht hierf\u00fcr keinen eigenen Wert im availabilityStatus Attribut vor, daher wird dieses Konzept ausschlie\u00dflich \u00fcber diesen eventCode kommuniziert."
+                            }
+                        ],
+                        "code": "H4",
+                        "display": "vorl\u00e4ufiges Dokument"
+                    }
+                ]
+            },
+            {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "concept": [
+                    {
+                        "code": "urn:ihe:iti:xdw:2011:eventCode:open",
+                        "display": "Workflow offen"
+                    },
+                    {
+                        "code": "urn:ihe:iti:xdw:2011:eventCode:closed",
+                        "display": "Workflow abgeschlossen"
+                    }
+                ]
+            },
+            {
+                "valueSet": [
+                    "http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.465"
+                ]
+            }
+        ]
+    }
+}

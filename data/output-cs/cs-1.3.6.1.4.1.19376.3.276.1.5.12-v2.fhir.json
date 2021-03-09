@@ -1,0 +1,99 @@
+{
+    "id": "1.3.6.1.4.1.19376.3.276.1.5.12-v2",
+    "concept": [
+        {
+            "code": "1",
+            "display": "Patientenkontakt"
+        },
+        {
+            "code": "2",
+            "display": "Verlegung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "1"
+                }
+            ]
+        },
+        {
+            "code": "3",
+            "display": "Entlassung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "1"
+                }
+            ]
+        },
+        {
+            "code": "4",
+            "display": "Überweisung/Einweisung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "1"
+                }
+            ]
+        },
+        {
+            "code": "5",
+            "display": "Aufnahme",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "1"
+                }
+            ]
+        },
+        {
+            "code": "6",
+            "display": "Anforderung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "1"
+                }
+            ]
+        },
+        {
+            "code": "7",
+            "display": "Auf Anfrage"
+        },
+        {
+            "code": "8",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Regelmäßige Übertragungen (z.B. Implantate, Fitnesstracker), auch wenn durch den Patienten ursprünglich veranlasst, werden über das Konzept 11 (\"Monitoring\") abgebildet."
+                }
+            ],
+            "display": "Veranlassung durch Patient"
+        },
+        {
+            "code": "9",
+            "display": "Konsil/Zweitmeinung"
+        },
+        {
+            "code": "10",
+            "display": "Systemwechsel/Archivierung"
+        },
+        {
+            "code": "11",
+            "display": "Monitoring"
+        }
+    ],
+    "content": "complete",
+    "date": "2018-07-13",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.12"
+        }
+    ],
+    "name": "Grund der Übermittlung",
+    "status": "draft",
+    "url": "http://ihe-d.de/CodeSystems/GrundDerUebermittlung",
+    "valueSet": "http://ihe-d.de/CodeSystems/GrundDerUebermittlung?vs",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

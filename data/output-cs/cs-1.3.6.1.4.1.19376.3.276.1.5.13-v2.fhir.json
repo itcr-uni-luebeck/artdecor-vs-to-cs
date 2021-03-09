@@ -1,0 +1,249 @@
+{
+    "id": "1.3.6.1.4.1.19376.3.276.1.5.13-v2",
+    "concept": [
+        {
+            "code": "1",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die die Einweisung veranlasst hat. (Sie wird auch als Zuweiser bezeichnet.)"
+                }
+            ],
+            "display": "Einweiser"
+        },
+        {
+            "code": "2",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die für die Entlassung verantwortlich ist."
+                }
+            ],
+            "display": "Entlassender"
+        },
+        {
+            "code": "3",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die die Überweisung veranlasst hat."
+                }
+            ],
+            "display": "Überweiser"
+        },
+        {
+            "code": "4",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person oder das Gerät, welche(s) die dokumentierte Aktion durchgeführt hat."
+                }
+            ],
+            "display": "Durchführender"
+        },
+        {
+            "code": "5",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Das Gerät, welches die dokumentierte Aktion durchgeführt hat."
+                }
+            ],
+            "display": "durchführendes Gerät",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "4"
+                }
+            ]
+        },
+        {
+            "code": "6",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die den Patienten betreut, d.h. den Überblick über die Behandlung behält und als primärer Ansprechpartner während der Behandlung dient.&amp;#160;"
+                }
+            ],
+            "display": "Betreuer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "4"
+                }
+            ]
+        },
+        {
+            "code": "7",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die den Patienten pflegerisch (aktiv) betreut."
+                }
+            ],
+            "display": "Pflegender",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "4"
+                }
+            ]
+        },
+        {
+            "code": "17",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die ein Gutachten erstellt."
+                }
+            ],
+            "display": "Begutachtender",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "4"
+                }
+            ]
+        },
+        {
+            "code": "8",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die den Patienten aktiv behandelt im Sinne der Verbesserung (oder zumindest Beibehaltung) des gesundheitlichen Zustandes."
+                }
+            ],
+            "display": "Behandler",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "4"
+                }
+            ]
+        },
+        {
+            "code": "9",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die den Patienten außerhalb der (eigenen) Einrichtung zuerst behandelt hat. Das kann - muss aber nicht - im Rahmen einer Notfallversorgung stattgefunden haben."
+                }
+            ],
+            "display": "Erstbehandler außerhalb einer Einrichtung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "10",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die zusätzliche Mittel (Medikamente, Heil-/Hilfsmittel) bereitgestellt hat."
+                }
+            ],
+            "display": "Bereitstellender",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "4"
+                }
+            ]
+        },
+        {
+            "code": "11",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die übermittelte Informationen eingibt oder ein Gerät, das erzeugte Daten im System hinterlegt."
+                }
+            ],
+            "display": "Dokumentierender"
+        },
+        {
+            "code": "12",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Das Gerät, welches erzeugte Daten im System hinterlegt."
+                }
+            ],
+            "display": "dokumentierendes Gerät",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "11"
+                }
+            ]
+        },
+        {
+            "code": "13",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die Korrektheit der hinterlegten Information überprüft und verifiziert hat."
+                }
+            ],
+            "display": "Validierer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "11"
+                }
+            ]
+        },
+        {
+            "code": "14",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die vor dem Gesetz für die Korrektheit der Informationen verantwortlich ist und dafür haftet."
+                }
+            ],
+            "display": "Gesetzlich Verantwortlicher",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "11"
+                }
+            ]
+        },
+        {
+            "code": "15",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die Auswertungen vorgenommen und beratend involviert war."
+                }
+            ],
+            "display": "Beratender"
+        },
+        {
+            "code": "16",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Eine Person, die zu den hier dokumentierten Informationen beigetragen hat."
+                }
+            ],
+            "display": "Informierender"
+        }
+    ],
+    "content": "complete",
+    "date": "2018-07-13",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.13"
+        }
+    ],
+    "name": "Prozessrollen für Autoren",
+    "status": "draft",
+    "url": "http://ihe-d.de/CodeSystems/ProzessrollenFuerAutoren",
+    "valueSet": "http://ihe-d.de/CodeSystems/ProzessrollenFuerAutoren?vs",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

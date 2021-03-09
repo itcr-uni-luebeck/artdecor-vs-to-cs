@@ -1,0 +1,18 @@
+{
+    "id": "1.2.840.10065.1.12-v2",
+    "concept": [],
+    "content": "complete",
+    "date": "2020-10-02",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.840.10065.1.12"
+        }
+    ],
+    "name": "SignatureTypeCodes",
+    "status": "draft",
+    "url": "http://hl7.org/fhir/ValueSet/signature-type",
+    "valueSet": "http://hl7.org/fhir/ValueSet/signature-type?vs",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

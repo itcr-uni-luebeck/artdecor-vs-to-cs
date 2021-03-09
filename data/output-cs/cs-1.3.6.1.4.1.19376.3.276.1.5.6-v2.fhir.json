@@ -1,0 +1,134 @@
+{
+    "id": "1.3.6.1.4.1.19376.3.276.1.5.6-v2",
+    "concept": [
+        {
+            "code": "urn:ihe-d:ig:Entlassmanagementbrief:2018",
+            "display": "Entlassmanagementbrief"
+        },
+        {
+            "code": "urn:ihe-d:ig:NotaufnahmeregisterTraumaModul:2017",
+            "display": "NotaufnahmeregisterTraumamodul"
+        },
+        {
+            "code": "urn:ihe-d:ig:NotaufnahmeregisterBasisModul:2017",
+            "display": "NotaufnahmeregisterBasismodul"
+        },
+        {
+            "code": "urn:ihe-d:ig:MeldepflichtigeKrankheitenLabor:2014",
+            "display": "Meldepflichtige Krankheiten: Labormeldung"
+        },
+        {
+            "code": "urn:ihe-d:ig:MeldepflichtigeKrankheitenArzt:2013",
+            "display": "Übermittlung meldepflichtiger Krankheiten – Arztmeldung"
+        },
+        {
+            "code": "urn:ihe-d:ig:RehaEntlassbrief:2009",
+            "display": "Ärztlicher Reha-Entlassungsbericht"
+        },
+        {
+            "code": "urn:ihe-d:ig:KurzberichtUeberleitungKrankenhaus:2016",
+            "display": "Überleitungsmanagement Ärztlicher Kurzbericht über den Krankenhausaufenthalt"
+        },
+        {
+            "code": "urn:ihe-d:ig:KurzberichtUeberleitungNiedergelassenerArzt:2016",
+            "display": "Überleitungsmanagement Ärztlicher Kurzbericht des niedergelassenen Arztes"
+        },
+        {
+            "code": "urn:ihe-d:ig:Medikationsplan:2015",
+            "display": "Medikationsplan"
+        },
+        {
+            "code": "urn:ihe-d:ig:Arztbriefplus:2017",
+            "display": "Arztbrief plus"
+        },
+        {
+            "code": "urn:ihe-d:ig:arztbrief:2014:nonXmlBody",
+            "display": "Arztbrief 2014"
+        },
+        {
+            "code": "urn:ihe-d:ig:eppc-g:2015",
+            "display": "Enhanced Patient Privacy Consent - Germany"
+        },
+        {
+            "code": "urn:ihe-d:ig:eppc-g-sd:2015",
+            "display": "Enhanced Patient Privacy Consent - Germany - Scanned Document Option"
+        },
+        {
+            "code": "urn:ihe-d:spec:PDF_A1:2005",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "PDF Format für die elektronische Archivierung nach ISO 19005-1:2005"
+                }
+            ],
+            "display": "PDF/A-1"
+        },
+        {
+            "code": "urn:ihe-d:spec:PDF_A2:2011",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "PDF Format für die elektronische Archivierung nach ISO 19005-2"
+                }
+            ],
+            "display": "PDF/A-2"
+        },
+        {
+            "code": "urn:ihe-d:spec:PDF_A3:2012",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "PDF Format für die elektronische Archivierung nach ISO 19005-3"
+                }
+            ],
+            "display": "PDF/A-3"
+        },
+        {
+            "code": "urn:ihe-d:spec:PDF_UA:2008",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Barrierefreies PDF nach ISO 14289"
+                }
+            ],
+            "display": "PDF/UA"
+        },
+        {
+            "code": "urn:ihe-d:mime",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Dieser Code wurde verwendet, wenn das Dokumentenformat ausreichend durch den MIME Type beschrieben war. Dafür gibt es nun den internationalen Code \"urn:ihe:iti:xds:2017:mimeTypeSufficient\" mit Code System&amp;#160;"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        }
+    ],
+    "content": "complete",
+    "date": "2018-07-13",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.6"
+        }
+    ],
+    "name": "Deutsche Dokumentenformate",
+    "property": [
+        {
+            "code": "deprecated",
+            "description": "whether the concept is deprecated",
+            "type": "boolean"
+        }
+    ],
+    "status": "draft",
+    "url": "http://ihe-d.de/CodeSystems/DeutscheDokumentenformate",
+    "valueSet": "http://ihe-d.de/CodeSystems/DeutscheDokumentenformate?vs",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

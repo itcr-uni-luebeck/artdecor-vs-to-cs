@@ -1,0 +1,87 @@
+{
+    "id": "1.2.276.0.76.5.509-v2",
+    "concept": [
+        {
+            "code": "SGBVIII",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "SGB VIII"
+                }
+            ],
+            "display": "SGB VIII"
+        },
+        {
+            "code": "HERZ",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Hilfen zur Erziehung sind in Deutschland staatliche Leistungen der Kinder- und Jugendhilfe für Familien mit Kindern. Gesetzlich geregelt sind diese Hilfen in §§ 27–40 des SGB VIII – Kinder und Jugendhilfe"
+                }
+            ],
+            "display": "Hilfen zur Erziehung nach SGB VIII",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "SGBVIII"
+                }
+            ]
+        },
+        {
+            "code": "SGBXII",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "SGB XII"
+                }
+            ],
+            "display": "SGB XII"
+        },
+        {
+            "code": "HGES",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Hilfen zur Gesundheit sind eine Sozialleistung nach dem SGB XII. Sie soll Bedürftigen, die nicht krankenversichert sind, einen Zugang zu Leistungen der Gesundheitsfürsorge ermöglichen."
+                }
+            ],
+            "display": "Hilfen zur Gesundheit nach SGB XII",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "SGBXII"
+                }
+            ]
+        },
+        {
+            "code": "HPFL",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Hilfe zur Pflege ist eine bedarfsorientierte Sozialleistung in Deutschland zur Unterstützung pflegebedürftiger Personen, die den notwendigen Pflegeaufwand nicht aus eigenen Mitteln sicherstellen können. Hilfe zur Pflege ist Teil der Sozialhilfe und in den §§ § 61 ff. SGB XII gesetzlich geregelt"
+                }
+            ],
+            "display": "Hilfe zur Pflege nach SGB XII",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "SGBXII"
+                }
+            ]
+        }
+    ],
+    "content": "complete",
+    "date": "2020-02-06",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.276.0.76.5.509"
+        }
+    ],
+    "name": "Codes Sozialgesetzbuch",
+    "status": "draft",
+    "url": "urn:oid:1.2.276.0.76.5.509",
+    "valueSet": "http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.465",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

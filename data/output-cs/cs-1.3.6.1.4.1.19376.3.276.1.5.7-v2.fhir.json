@@ -1,0 +1,43 @@
+{
+    "id": "1.3.6.1.4.1.19376.3.276.1.5.7-v2",
+    "concept": [
+        {
+            "code": "DMP",
+            "display": "Disease Management Programm"
+        },
+        {
+            "code": "ECR",
+            "display": "Elektronische Fallakte (EFA)"
+        },
+        {
+            "code": "IVA",
+            "display": "Integrierte Versorgung (IVa-Vertrag)"
+        },
+        {
+            "code": "IVB",
+            "display": "Integrierte Versorgung (IVb-Vertrag)"
+        },
+        {
+            "code": "DIAG",
+            "display": "Medizinischer Fall auf Diagnose Basis"
+        },
+        {
+            "code": "EMERG",
+            "display": "Notfall-relevante Dokumente"
+        }
+    ],
+    "content": "complete",
+    "date": "2018-07-13",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.7"
+        }
+    ],
+    "name": "Ordnertypen",
+    "status": "draft",
+    "url": "http://ihe-d.de/CodeSystems/Ordnertypen",
+    "valueSet": "http://ihe-d.de/CodeSystems/Ordnertypen?vs",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

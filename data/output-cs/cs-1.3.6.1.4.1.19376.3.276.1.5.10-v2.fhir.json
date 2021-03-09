@@ -1,0 +1,49 @@
+{
+    "id": "1.3.6.1.4.1.19376.3.276.1.5.10-v2",
+    "concept": [
+        {
+            "code": "PV",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Aus Sicht der Betroffenen sind die Daten so sensibel, dass sie für praktisch niemanden außer ihr selbst sichtbar sein sollten."
+                }
+            ],
+            "display": "gesperrt"
+        },
+        {
+            "code": "PR",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Aus Sicht der Betroffenen sind die Daten sensibel genug, dass für sie besondere Zugriffsregelungen gelten sollen, die den Kreis der Zugriffsberechtigten signifikant einschränken."
+                }
+            ],
+            "display": "erhöhte Vertraulichkeit"
+        },
+        {
+            "code": "PN",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Aus Sicht der Betroffenen sind die Daten nicht sensibler als andere Gesundheitsdaten und können daher nach den gleichen Regeln benutzt werden"
+                }
+            ],
+            "display": "übliche Vertraulichkeit"
+        }
+    ],
+    "content": "complete",
+    "date": "2018-07-13",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.10"
+        }
+    ],
+    "name": "Betroffeneneinschätzung der Vertraulichkeitsstufe",
+    "status": "draft",
+    "url": "http://ihe-d.de/CodeSystems/BetroffeneneinschaetzungVertraulichkeitsstufe",
+    "valueSet": "http://ihe-d.de/CodeSystems/BetroffeneneinschaetzungVertraulichkeitsstufe?vs",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

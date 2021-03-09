@@ -1,0 +1,69 @@
+{
+    "id": "1.3.6.1.4.1.19376.3.276.1.5.14-v2",
+    "concept": [
+        {
+            "code": "101",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "der Hausarzt (Primärversorger) des Patienten"
+                }
+            ],
+            "display": "Hausarzt"
+        },
+        {
+            "code": "102",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "der Patient selbst"
+                }
+            ],
+            "display": "Patient"
+        },
+        {
+            "code": "103",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "ein Vertreter des Arbeitgebers des Patienten"
+                }
+            ],
+            "display": "Arbeitgebervertreter"
+        },
+        {
+            "code": "104",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Die Person, die den Patienten normalerweise primär betreut. Beispiele: Langzeitpflege, Stammapotheke"
+                }
+            ],
+            "display": "Primärbetreuer (langfristig)"
+        },
+        {
+            "code": "105",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "ein Vertreter des Kostenträgers"
+                }
+            ],
+            "display": "Kostenträgerverteter"
+        }
+    ],
+    "content": "complete",
+    "date": "2018-07-13",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.14"
+        }
+    ],
+    "name": "Patientenbeziehungsrollen für Autoren",
+    "status": "draft",
+    "url": "http://ihe-d.de/CodeSystems/PatientenbeziehungsrollenFuerAutoren",
+    "valueSet": "http://ihe-d.de/CodeSystems/PatientenbeziehungsrollenFuerAutoren?vs",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

@@ -1,0 +1,1854 @@
+{
+    "id": "1.3.6.1.4.1.19376.3.276.1.5.11-v2",
+    "concept": [
+        {
+            "code": "1",
+            "display": "Gesundheits- Sozial-, Sportmanagement"
+        },
+        {
+            "code": "2",
+            "display": "Arzthilfe, Praxisorganisation, -verwaltung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "1"
+                }
+            ]
+        },
+        {
+            "code": "3",
+            "display": "Kaufmann/-frau - Gesundheitswesen",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "2"
+                }
+            ]
+        },
+        {
+            "code": "4",
+            "display": "Medizinischer Fachangestellter",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "2"
+                }
+            ]
+        },
+        {
+            "code": "5",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Tiermedizinischer Fachangestellter"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "2"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "6",
+            "display": "Zahnmedizinischer Fachangestellter",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "2"
+                }
+            ]
+        },
+        {
+            "code": "7",
+            "display": "Arztsekretär",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "2"
+                }
+            ]
+        },
+        {
+            "code": "8",
+            "display": "Sozial-, Gesundheitsmanagement",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "1"
+                }
+            ]
+        },
+        {
+            "code": "9",
+            "display": "Gesundheitsaufseher / Hygienekontrolleur",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "10",
+            "display": "Assistent Gesundheits- und Sozialwesen",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "11",
+            "display": "Beamte Sozialversicherung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "12",
+            "display": "Beamte Sozialverwaltung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "13",
+            "display": "Betriebswirt  Sozialversicherung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "14",
+            "display": "Gesundheitsmanager",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "15",
+            "display": "Sozialökonom, -wirt",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "16",
+            "display": "Sozialversicherungsfachangestellte",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "8"
+                }
+            ]
+        },
+        {
+            "code": "17",
+            "display": "Sportmanagement",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "1"
+                }
+            ]
+        },
+        {
+            "code": "18",
+            "display": "Sportassistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "17"
+                }
+            ]
+        },
+        {
+            "code": "19",
+            "display": "Fachwirt Fitness",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "17"
+                }
+            ]
+        },
+        {
+            "code": "20",
+            "display": "Sport- und Fitnesskaufmann",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "17"
+                }
+            ]
+        },
+        {
+            "code": "21",
+            "display": "Sportmanager, Sportökonom",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "17"
+                }
+            ]
+        },
+        {
+            "code": "22",
+            "display": "nichtärztliche medizinische Analyse, Beratung, Pflege, Therapie"
+        },
+        {
+            "code": "23",
+            "display": "Gesundheitsberatung, -förderung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "22"
+                }
+            ]
+        },
+        {
+            "code": "24",
+            "display": "Assistenten für Gesundheitstourismus,  -prophylaxe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "25",
+            "display": "Diätassistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "26",
+            "display": "Gesundheitsförderer, -pädagoge",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "27",
+            "display": "Gesundheitswissenschaftler",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "28",
+            "display": "Oekotrophologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "29",
+            "display": "Tai-Chi-Chuan- und Qigong-Lehrer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "30",
+            "display": "Yogalehrer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "31",
+            "display": "Sportfachmann",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "32",
+            "display": "Sportwissenschaftler",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "23"
+                }
+            ]
+        },
+        {
+            "code": "33",
+            "display": "Kranken-, Altenpflege, Geburtshilfe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "22"
+                }
+            ]
+        },
+        {
+            "code": "34",
+            "display": "Altenpflegehelfer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "35",
+            "display": "Altenpfleger",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "36",
+            "display": "Fachkraft Pflegeassistenz",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "37",
+            "display": "Gesundheits- und Kinderkrankenpfleger",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "38",
+            "display": "Gesundheits- und Krankenpflegehelfer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "39",
+            "display": "Gesundheits- und Krankenpfleger",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "40",
+            "display": "Haus- und Familienpfleger",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "41",
+            "display": "Hebamme / Entbindungspfleger",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "42",
+            "display": "Heilerziehungspfleger",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "43",
+            "display": "Helfer Altenpflege",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "44",
+            "display": "Helfer stationäre Krankenpflege",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "45",
+            "display": "Heilerziehungspflegehelfer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "46",
+            "display": "Pflegewissenschaftler",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "33"
+                }
+            ]
+        },
+        {
+            "code": "47",
+            "display": "Nichtärztliche Behandlung, Therapie (außer Psychotherapie)",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "22"
+                }
+            ]
+        },
+        {
+            "code": "48",
+            "display": "Akademischer Sprachtherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "49",
+            "display": "Atem-, Sprech- und Stimmlehrer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "50",
+            "display": "Ergotherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "51",
+            "display": "Fachangestellter für Bäderbetriebe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "52",
+            "display": "Heilpraktiker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "53",
+            "display": "Klinischer Linguist",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "54",
+            "display": "Kunsttherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "55",
+            "display": "Logopäde",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "56",
+            "display": "Masseur und medizinische Bademeister",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "57",
+            "display": "Motologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "58",
+            "display": "Musiktherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "59",
+            "display": "Orthoptist",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "60",
+            "display": "Physiotherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "61",
+            "display": "Podologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "62",
+            "display": "Sporttherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "63",
+            "display": "Sprechwissenschaftler",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "64",
+            "display": "Staatlich anerkannter Sprachtherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "65",
+            "display": "Stomatherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "66",
+            "display": "Tanz- und Bewegungstherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "67",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Tierheilpraktiker"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "68",
+            "display": "Sozialtherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "47"
+                }
+            ]
+        },
+        {
+            "code": "69",
+            "display": "Pharmazeutische Beratung, Pharmavertrieb",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "22"
+                }
+            ]
+        },
+        {
+            "code": "70",
+            "display": "Apotheker /Fachapotheker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "69"
+                }
+            ]
+        },
+        {
+            "code": "71",
+            "display": "Pharmazeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "69"
+                }
+            ]
+        },
+        {
+            "code": "72",
+            "display": "Pharmazeutisch-technischer Assistent – PTA",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "69"
+                }
+            ]
+        },
+        {
+            "code": "73",
+            "display": "Pharmazeutisch-kaufmännischer Angestellter",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "69"
+                }
+            ]
+        },
+        {
+            "code": "74",
+            "display": "Psychologische Analyse, Beratung, Therapie",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "22"
+                }
+            ]
+        },
+        {
+            "code": "75",
+            "display": "Gesundheits- und Rehabilitationspsychologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "76",
+            "display": "Kinder- und Jugendpsychotherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "77",
+            "display": "Klinischer Psychologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "78",
+            "display": "Kommunikationspsychologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "79",
+            "display": "Pädagogischer Psychologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "80",
+            "display": "Psychoanalytiker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "81",
+            "display": "Psychologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "82",
+            "display": "Psychologischer Psychotherapeut",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "83",
+            "display": "Sportpsychologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "84",
+            "display": "Verkehrspsychologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "85",
+            "display": "Wirtschaftspsychologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "74"
+                }
+            ]
+        },
+        {
+            "code": "86",
+            "display": "Rettungsdienst",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "22"
+                }
+            ]
+        },
+        {
+            "code": "87",
+            "display": "Ingenieur Rettungswesen",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "86"
+                }
+            ]
+        },
+        {
+            "code": "88",
+            "display": "Notfallsanitäter",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "86"
+                }
+            ]
+        },
+        {
+            "code": "89",
+            "display": "Rettungsassistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "86"
+                }
+            ]
+        },
+        {
+            "code": "90",
+            "display": "Rettungshelfer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "86"
+                }
+            ]
+        },
+        {
+            "code": "91",
+            "display": "Rettungssanitäter",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "86"
+                }
+            ]
+        },
+        {
+            "code": "92",
+            "display": "med. Datenverarbeitung"
+        },
+        {
+            "code": "93",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Gelöscht, da unnötige Hierarchiestufe."
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "92"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "94",
+            "display": "Medizinischer Dokumentar",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "92"
+                }
+            ]
+        },
+        {
+            "code": "95",
+            "display": "Medizinischer Dokumentationsassistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "92"
+                }
+            ]
+        },
+        {
+            "code": "173",
+            "display": "Fachangestellter f. Medien- und Informationsdienste - Medizinische Dokumentation",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "92"
+                }
+            ]
+        },
+        {
+            "code": "174",
+            "display": "Medizinischer Informationsmanager",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "92"
+                }
+            ]
+        },
+        {
+            "code": "96",
+            "display": "Soziales, Pädagogik"
+        },
+        {
+            "code": "97",
+            "display": "Kinderbetreuung, -erziehung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "96"
+                }
+            ]
+        },
+        {
+            "code": "98",
+            "display": "Pädagoge",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "97"
+                }
+            ]
+        },
+        {
+            "code": "99",
+            "display": "Kinderdorfmutter, -vater",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "97"
+                }
+            ]
+        },
+        {
+            "code": "100",
+            "display": "Kinderpfleger",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "97"
+                }
+            ]
+        },
+        {
+            "code": "101",
+            "display": "Erzieher",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "97"
+                }
+            ]
+        },
+        {
+            "code": "102",
+            "display": "Erzieher Jugend- und Heimerziehung",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "97"
+                }
+            ]
+        },
+        {
+            "code": "103",
+            "display": "Lehrer",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "96"
+                }
+            ]
+        },
+        {
+            "code": "104",
+            "display": "Orientierungs- und Mobilitätslehrer ",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "103"
+                }
+            ]
+        },
+        {
+            "code": "105",
+            "display": "Medien-, Kulturpädagogik",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "96"
+                }
+            ]
+        },
+        {
+            "code": "106",
+            "display": "Musikpädagoge",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "105"
+                }
+            ]
+        },
+        {
+            "code": "107",
+            "display": "Sozialberatung, -arbeit",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "96"
+                }
+            ]
+        },
+        {
+            "code": "108",
+            "display": "Sozialarbeiter / Sozialpädagoge",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "107"
+                }
+            ]
+        },
+        {
+            "code": "109",
+            "display": "Betreuungskraft / Alltagsbegleiter",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "107"
+                }
+            ]
+        },
+        {
+            "code": "110",
+            "display": "Gerontologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "107"
+                }
+            ]
+        },
+        {
+            "code": "111",
+            "display": "Psychosozialer Prozessbegleiter",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "107"
+                }
+            ]
+        },
+        {
+            "code": "112",
+            "display": "Rehabilitationspädagoge",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "107"
+                }
+            ]
+        },
+        {
+            "code": "113",
+            "display": "Sozialassistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "107"
+                }
+            ]
+        },
+        {
+            "code": "114",
+            "display": "Seelsorge",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "96"
+                }
+            ]
+        },
+        {
+            "code": "115",
+            "display": "Religionspädagoge",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "114"
+                }
+            ]
+        },
+        {
+            "code": "116",
+            "display": "Gemeindehelfer, Gemeindediakon",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "114"
+                }
+            ]
+        },
+        {
+            "code": "117",
+            "display": "Theologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "114"
+                }
+            ]
+        },
+        {
+            "code": "118",
+            "display": "Medizintechnik, Laboranalyse"
+        },
+        {
+            "code": "119",
+            "display": "Medizin-, Orthopädie- und Rehatechnik",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "118"
+                }
+            ]
+        },
+        {
+            "code": "120",
+            "display": "Assistent Medizinische Gerätetechnik",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "121",
+            "display": "Augenoptiker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "122",
+            "display": "Hörakustiker / Hörgeräteakustiker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "123",
+            "display": "Hörgeräteakustikermeister",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "124",
+            "display": "Ingenieur Augenoptik ",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "125",
+            "display": "Ingenieur - Hörtechnik und Audiologie",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "126",
+            "display": "Ingenieur - Medizintechnik",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "127",
+            "display": "Ingenieur - Orthopädie- und Rehatechnik",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "128",
+            "display": "Medizinphysiker (z.B. in Strahlenmedizin)",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "129",
+            "display": "Orthopädieschuhmacher",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "130",
+            "display": "Orthopädietechnik-Mechaniker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "131",
+            "display": "Zahntechniker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "132",
+            "display": "Glasbläser (Fachrichtung Kunstaugen)",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "133",
+            "display": "staatlich geprüfter Techniker der Fachrichtung Medizintechnik",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "119"
+                }
+            ]
+        },
+        {
+            "code": "134",
+            "display": "Medizinisch-technische Assistenz",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "118"
+                }
+            ]
+        },
+        {
+            "code": "135",
+            "display": "Anästhesietechnischer Assistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                }
+            ]
+        },
+        {
+            "code": "136",
+            "display": "HNO Audiologieassistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                }
+            ]
+        },
+        {
+            "code": "137",
+            "display": "Medizinisch-Technischer Assistent Funktionsdiagnostik – MTA-F",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                }
+            ]
+        },
+        {
+            "code": "138",
+            "display": "Medizinisch-Technischer Laboratoriumsassistent – MTA-L",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                }
+            ]
+        },
+        {
+            "code": "139",
+            "display": "Medizinisch-Technischer Radiologieassistent – MTA-R",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                }
+            ]
+        },
+        {
+            "code": "140",
+            "display": "Operationstechnischer Angestellter",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                }
+            ]
+        },
+        {
+            "code": "141",
+            "display": "Operationstechnischer Assistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                }
+            ]
+        },
+        {
+            "code": "142",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Veterinärmedizinischer-technischer Assistent"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "143",
+            "display": "Zytologieassistent",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "134"
+                }
+            ]
+        },
+        {
+            "code": "144",
+            "display": "Chemie, naturwissenschaftliche Laboranalyse (außer MTA)",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "118"
+                }
+            ]
+        },
+        {
+            "code": "145",
+            "display": "Biochemiker (z.B. klinische Chemie)",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "144"
+                }
+            ]
+        },
+        {
+            "code": "146",
+            "display": "Chemiker (z.B. klinische Chemie)",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "144"
+                }
+            ]
+        },
+        {
+            "code": "147",
+            "display": "Humangenetiker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "144"
+                }
+            ]
+        },
+        {
+            "code": "148",
+            "display": "Mikrobiologe",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "144"
+                }
+            ]
+        },
+        {
+            "code": "149",
+            "display": "Dienstleistungen am Menschen (außer medizinische)"
+        },
+        {
+            "code": "150",
+            "display": "Körperpflege",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "149"
+                }
+            ]
+        },
+        {
+            "code": "151",
+            "display": "Fachkraft Beauty und Wellness",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "150"
+                }
+            ]
+        },
+        {
+            "code": "152",
+            "display": "Friseur",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "150"
+                }
+            ]
+        },
+        {
+            "code": "153",
+            "display": "Kosmetiker",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "150"
+                }
+            ]
+        },
+        {
+            "code": "154",
+            "display": "Bestattungswesen",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "149"
+                }
+            ]
+        },
+        {
+            "code": "155",
+            "display": "Bestattungsfachkraft",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "154"
+                }
+            ]
+        },
+        {
+            "code": "156",
+            "display": "Berufe aus sonstigen Berufsfeldern"
+        },
+        {
+            "code": "157",
+            "display": "Umwelt",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                }
+            ]
+        },
+        {
+            "code": "158",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Medien, Kultur, Gestaltung, Kunst (außer Pädagogen)"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "159",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Schutz und Sicherheit"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "162",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Verfahrens- und Produktentwicklung, technisches Zeichnen, Konstruktion"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "163",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Sprachen"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "164",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Produktion, Produktionsplanung, Produktionssteuerung, Instandhaltung"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "165",
+            "display": "Jurist",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                }
+            ]
+        },
+        {
+            "code": "166",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Reinigung"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "167",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Bau, Architektur, Rohstoffe"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "168",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Verwaltungsberufe (außer medizinische), kaufmännische Berufe, Verkehr"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "169",
+            "display": "Taxifahrer bei Krankentransport",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                }
+            ]
+        },
+        {
+            "code": "170",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Elektro, Energie, Ver- und Entsorgung"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "171",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Gastgewerbe und Tourismus, Veranstaltungsmanagement und Hauswirtschaft"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        },
+        {
+            "code": "172",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "IT"
+                }
+            ],
+            "display": "obsolet",
+            "property": [
+                {
+                    "code": "parent",
+                    "valueCode": "156"
+                },
+                {
+                    "code": "deprecated",
+                    "valueBoolean": false
+                }
+            ]
+        }
+    ],
+    "content": "complete",
+    "date": "2018-07-13",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.11"
+        }
+    ],
+    "name": "Qualifikationen nicht ärztlicher Autoren",
+    "property": [
+        {
+            "code": "deprecated",
+            "description": "whether the concept is deprecated",
+            "type": "boolean"
+        }
+    ],
+    "status": "draft",
+    "url": "http://ihe-d.de/CodeSystems/QualifikationenNichtAerztlicherAutoren",
+    "valueSet": "http://ihe-d.de/CodeSystems/QualifikationenNichtAerztlicherAutoren?vs",
+    "version": "v2",
+    "resourceType": "CodeSystem"
+}

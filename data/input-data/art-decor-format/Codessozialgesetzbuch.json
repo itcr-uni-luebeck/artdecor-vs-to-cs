@@ -1,0 +1,113 @@
+{
+    "valueSet": [
+        {
+            "id": "1.2.276.0.76.11.465",
+            "name": "Codessozialgesetzbuch",
+            "displayName": "Codes Sozialgesetzbuch",
+            "canonicalUri": "http://ihe-d.de/ValueSets/Codessozialgesetzbuch",
+            "effectiveDate": "2020-02-06T17:01:13",
+            "statusCode": "draft",
+            "versionLabel": "v2",
+            "desc": [
+                {
+                    "language": "de-DE",
+                    "#text": "Spezialcodes f\u00fcr Konzepte im Rahmen des deutschen Sozialgesetzbuchs I-XII"
+                }
+            ],
+            "sourceCodeSystem": [
+                {
+                    "id": "1.2.276.0.76.5.509",
+                    "identifierName": "Codes&#160;Sozialgesetzbuch",
+                    "canonicalUri": "urn:oid:1.2.276.0.76.5.509",
+                    "canonicalUriDSTU2": "urn:oid:1.2.276.0.76.5.509",
+                    "canonicalUriSTU3": "urn:oid:1.2.276.0.76.5.509",
+                    "canonicalUriR4": "urn:oid:1.2.276.0.76.5.509"
+                }
+            ],
+            "publishingAuthority": [
+                {
+                    "name": "HL7 Deutschland e. V.",
+                    "addrLine": [
+                        "Anna-Louisa-Karsch-Str. 2",
+                        "10178 Berlin",
+                        {
+                            "type": "phone",
+                            "#text": "T 0700 77 77 67 67"
+                        }
+                    ]
+                }
+            ],
+            "conceptList": [
+                {
+                    "concept": [
+                        {
+                            "code": "SGBVIII",
+                            "codeSystem": "1.2.276.0.76.5.509",
+                            "displayName": "SGB VIII",
+                            "level": "0",
+                            "type": "A",
+                            "desc": [
+                                {
+                                    "language": "de-DE",
+                                    "#text": "SGB VIII"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "HERZ",
+                            "codeSystem": "1.2.276.0.76.5.509",
+                            "displayName": "Hilfen zur Erziehung nach SGB VIII",
+                            "level": "1",
+                            "type": "L",
+                            "desc": [
+                                {
+                                    "language": "de-DE",
+                                    "#text": "Die Hilfen zur Erziehung sind in Deutschland staatliche Leistungen der Kinder- und Jugendhilfe f\u00fcr Familien mit Kindern. Gesetzlich geregelt sind diese Hilfen in \u00a7\u00a7 27\u201340 des SGB VIII \u2013 Kinder und Jugendhilfe"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "SGBXII",
+                            "codeSystem": "1.2.276.0.76.5.509",
+                            "displayName": "SGB XII",
+                            "level": "0",
+                            "type": "A",
+                            "desc": [
+                                {
+                                    "language": "de-DE",
+                                    "#text": "SGB XII"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "HGES",
+                            "codeSystem": "1.2.276.0.76.5.509",
+                            "displayName": "Hilfen zur Gesundheit nach SGB XII",
+                            "level": "1",
+                            "type": "L",
+                            "desc": [
+                                {
+                                    "language": "de-DE",
+                                    "#text": "Die Hilfen zur Gesundheit sind eine Sozialleistung nach dem SGB XII. Sie soll Bed\u00fcrftigen, die nicht krankenversichert sind, einen Zugang zu Leistungen der Gesundheitsf\u00fcrsorge erm\u00f6glichen."
+                                }
+                            ]
+                        },
+                        {
+                            "code": "HPFL",
+                            "codeSystem": "1.2.276.0.76.5.509",
+                            "displayName": "Hilfe zur Pflege nach SGB XII",
+                            "level": "1",
+                            "type": "L",
+                            "desc": [
+                                {
+                                    "language": "de-DE",
+                                    "#text": "Hilfe zur Pflege ist eine bedarfsorientierte Sozialleistung in Deutschland zur Unterst\u00fctzung pflegebed\u00fcrftiger Personen, die den notwendigen Pflegeaufwand nicht aus eigenen Mitteln sicherstellen k\u00f6nnen. Hilfe zur Pflege ist Teil der Sozialhilfe und in den \u00a7\u00a7 \u00a7 61 ff. SGB XII gesetzlich geregelt"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

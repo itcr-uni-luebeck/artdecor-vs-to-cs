@@ -166,5 +166,5 @@ pip-selfcheck.json
 
 output
 other_code_systems
-convert-all.sh
+!convert-all.sh
 .vscode

@@ -29,10 +29,10 @@
       <system value="http://hl7.org/fhir/ValueSet/signature-type"/>
     </include>
     <include>
-      <valueSet value="urn:oid:1.2.840.10008.6.1.19"/>
+      <system value="urn:oid:1.2.840.10008.6.1.19"/>
     </include>
     <include>
-      <valueSet value="urn:oid:1.2.840.10008.6.1.2"/>
+      <system value="urn:oid:1.2.840.10008.6.1.2"/>
     </include>
     <include>
       <system value="http://ihe-d.de/CodeSystems/DokumentenWarnhinweise"/>

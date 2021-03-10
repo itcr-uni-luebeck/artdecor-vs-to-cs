@@ -36,10 +36,14 @@
                 "system": "http://hl7.org/fhir/ValueSet/signature-type"
             },
             {
-                "valueSet": "urn:oid:1.2.840.10008.6.1.19"
+                "valueSet": [
+                    "urn:oid:1.2.840.10008.6.1.19"
+                ]
             },
             {
-                "valueSet": "urn:oid:1.2.840.10008.6.1.2"
+                "valueSet": [
+                    "urn:oid:1.2.840.10008.6.1.2"
+                ]
             },
             {
                 "system": "http://ihe-d.de/CodeSystems/DokumentenWarnhinweise"

@@ -1,1 +1,182 @@
-{"resourceType":"ValueSet","id":"1.2.276.0.76.11.70--20180713162241","meta":{"profile":["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]},"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod","valuePeriod":{"start":"2018-07-13T16:22:41+01:00"}}],"url":"http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.70--20180713162241","identifier":[{"use":"official","system":"http://art-decor.org/ns/oids/vs","value":"1.2.276.0.76.11.70"}],"version":"2018-07-13T16:22:41","name":"IHEXDSpracticeSettingCodenondoctoral","title":"PracticeSetting non-doctoral","status":"active","experimental":false,"publisher":"IHE Deutschland e.V.","description":"PracticeSetting non-doctoral","immutable":false,"compose":{"include":[{"system":"http://ihe-d.de/CodeSystems/NichtaerztlicheFachrichtungen","concept":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Ergotherapie unterstützt und begleitet Menschen jeden Alters, die in ihrer Handlungsfähigkeit eingeschränkt oder von Einschränkung bedroht sind. Ziel ist, sie bei der Durchführung für sie bedeutungsvoller Betätigungen in den Bereichen Selbstversorgung, Produktivität und Freizeit in ihrer persönlichen Umwelt zu stärken.Hierbei dienen spezifische Aktivitäten, Umweltanpassung und Beratung dazu, dem Menschen Handlungsfähigkeit im Alltag, gesellschaftliche Teilhabe und eine Verbesserung seiner Lebensqualität zu ermöglichen. (Definition vom \"Deutschen\n                        Verband der Ergotherapeuten e.V.\")Typischerweise werden Dokumente, die von Angehörigen der folgenden Berufsgruppen erstellt werden, mit diesem Code versehen:* Ergotherapeutin/ Ergotherapeut"}],"code":"ERG","display":"Ergotherapie"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Deckt die Tätigkeiten folgender Berufe ab:* Diätassistentin/ Diätassistent* Diätköchin/ Diätkoch* Ernährungsberaterin/ Ernährungsberater* Oekotrophologin/ Oekotrophologe* Diabetesassistentin/ Diabetesassistent* Diabetesberaterin/ Diabetesberater"}],"code":"ERN","display":"Ernährung und Diätetik"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Deckt die Tätigkeiten folgender Berufe ab:* Clinical Trial Manager* Fachwissenschaftler/-innen in der Medizin* Klinischer Monitor* Studienassistentin/ Studienassistent* Study Nurse"}],"code":"FOR","display":"Forschung"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Pflege umfasst die eigenverantwortliche Versorgung und Betreuung, allein oder in Kooperation mit anderen Berufsangehörigen, von Menschen aller Altersgruppen, von Familien oder Lebensgemeinschaften, sowie von Gruppen und sozialen Gemeinschaften, ob krank oder gesund, in allen Lebenssituationen (Settings). Pflege schließt die Förderung der Gesundheit, Verhütung von Krankheiten und die Versorgung und Betreuung kranker, behinderter und sterbender Menschen ein. Weitere Schlüsselaufgaben der Pflege sind Wahrnehmung der Interessen und Bedürfnisse (Advocacy),\n                        Förderung einer sicheren Umgebung, Forschung, Mitwirkung in der Gestaltung der Gesundheitspolitik sowie im Management des Gesundheitswesens und in der Bildung. (Definition der Pflege vom \"International Council of Nurses ICN\" übersetzt vom Deutschen Berufsverband für Pflegeberufe) Deckt die Tätigkeiten folgender Berufe ab: Pflegeassistent / Alltagsbetreuer (m/w) Servicehelfer im Sozial- und Gesundheitswesen (m/w) Wundexperte (m/w) Stomatherapeutin/ Stomatherapeut Heilerziehungspflegerin/ Heilerziehungspfleger Gesundheits- und Krankenpflegehelferin/ Gesundheits- und\n                        Krankenpflegehelfer Gesundheits- und Krankenpflegerin/ Gesundheits- und Krankenpfleger Gesundheits- und Pflegeassistentin/ Gesundheits- und Pflegeassistent Gesundheits- und Pflegeberaterin/ Gesundheits- und Pflegeberater Pflegesachverständige/ Pflegesachverständiger"}],"code":"PFL","display":"Pflege und Betreuung"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Altenpfleger und Altenpflegehelfer pflegen und versorgen gesunde, kranke und pflegebedürftige alte Menschen. Neben den sozial-pflegerischen Aufgaben (z.B. Hilfe bei der Körperpflege und beim Essen) kommen den Altenpflegern und Altenpflegehelfern auch medizinisch-pflegerische Aufgaben zu (z.B. Unterstützung bei therapeutischen Maßnahmen der Rehabilitation oder das Ausführen ärztlicher Verordnungen wie das Wechseln von Verbänden, das Verabreichen von Medikamenten).  (Definition der Gesundheitsberichterstattung des Bundes)Typischerweise werden\n                        Dokumente, die von Angehörigen der folgenden Berufsgruppen erstellt werden, mit diesem Code versehen:* Altenpflegerin/ Altenpfleger"}],"code":"ALT","display":"Altenpflege"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Die Tätigkeitsfelder der Gesundheits- und Kinderkrankenpflege umfassen: Die Gestaltung eines Entwicklungsfördernden Umfeldes, Beratung über entsprechende Maßnahmen und Gesundheitsaufklärung, Entlastung der pflegenden Angehörigen, physische und psychische Betreuung, Entwicklung von Krankheitskonzepten, Unterstützung bei der Teilnahme am gesellschaftlichen Leben und Gutachtertätigkeit. (Definition vom Berufsverband Kinderkrankenpflege Deutschland e.V.) Typischerweise werden Dokumente, die von Angehörigen der folgenden Berufsgruppen erstellt werden, mit\n                        diesem Code versehen: - Gesundheits- und Kinderkrankenpflegerin/ Gesundheits- und Kinderkrankenpfleger"}],"code":"KIN","display":"Kinderpflege"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Dieses Konzept kann zur Kennzeichnung der Herkunft von Dokumenten verwendet werden, die der Patient selbstständig erstellt und eingestellt hat. Zum Beispiel über ein Patientenportal oder eine Smartphone-App. Daten die vom Patienten über eine solche Lösung stellvertretend für einen Heilberufler eingestellt werden (z.B. gescannter Arztbrief, DICOMDVD) sollten nicht dieses Konzept, sondern das Konzept, welches für den Heilberufler vorgesehen ist, verwenden."}],"code":"PAT","display":"Patient außerhalb der Betreuung"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Deckt die Tätigkeiten folgender Berufe ab:* Pharmakantin/ Pharmakant* Pharmakovigilantin/ Pharmakovigilant* Pharmazeutisch-kaufmännische Angestellte/ Pharmazeutisch-kaufmännischer Angestellter* Pharmazeutisch-technische Assistentin/ Pharmazeutisch-technischer Assistent * Apothekerin/Apotheker"}],"code":"PHZ","display":"Pharmazeutik"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Podologie ist die (nicht-ärztliche) Fuß-Heilkunde und wird von Podologen/Podologinnen praktiziert."}],"code":"POD","display":"Podologie"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Deckt die Tätigkeiten von Wellnessberatern und -beraterinnen ab; auch die Tätigkeiten von Fitnesstrainern außerhalb der medizinischen Rehabilitation oder der Sportmedizin sind durch dieses Konzept abgedeckt.Typischerweise werden Dokumente, die von Angehörigen der folgenden Berufsgruppen erstellt werden, mit diesem Code versehen:* Fitnessberaterin/ Fitnessberater* Fitnessmanagerin/ Fitnessmanager* Fitnesstrainerin/ Fitnesstrainer* Wellnessberaterin/ Wellnessberater* Wellnesstrainerin/ Wellnesstrainer"}],"code":"PRV","display":"Prävention"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Deckt die Tätigkeiten folgender Berufe ab:* Sozialarbeiterin / Sozialarbeiter* Sozialmedizinische Fachangestellte* Sozialpädagogin/ Sozialpädagoge* Sozialtherapeutin/ Sozialtherapeut* Compliance Coach, Adherence CoachWenn die Tätigkeit des Sozialdienstes eines Krankenhauses eindeutig einem ärztlichen Fachgebiet zugeordnet werden kann, sollte dieses bevorzugt verwendet werden."}],"code":"SOZ","display":"Sozialwesen"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Deckt die Tätigkeiten folgender Berufe ab:* Logopädin/ Logopäde* Medizinische Sprachheilpädagogin/ Medizinischer Sprachheilpädagoge* Staatlich anerkannte Sprachtherapeutin/ Staatlich anerkannter Sprachtherapeut"}],"code":"SPR","display":"Sprachtherapie"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Deckt die Tätigkeiten von Case Managern/Case Managerinnen ab."}],"code":"VKO","display":"Versorgungskoordination"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Deckt die Tätigkeiten folgender Berufe ab:* Medizincontrollerin/ Medizincontroller* Sekretärin im Gesundheitswesen/ Sekretär im Gesundheitswesen * Sozialversicherungsfachangestellte/ Sozialversicherungsfachangestellter* Verwaltungsangestellte in medizinischen Pflegeeinrichtungen/ Verwaltungsangestellter in medizinischen PflegeeinrichtungenWenn diese Tätigkeiten eindeutig einem ärztlichen Fachgebiet zugeordnet werden können, sollte dieses bevorzugt verwendet werden."}],"code":"VER","display":"Verwaltung"}]}]}}
+{
+    "resourceType": "ValueSet",
+    "id": "1.2.276.0.76.11.70--20180713162241",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {
+                "start": "2018-07-13T16:22:41+01:00"
+            }
+        }
+    ],
+    "url": "http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.70--20180713162241",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://art-decor.org/ns/oids/vs",
+            "value": "1.2.276.0.76.11.70"
+        }
+    ],
+    "version": "2018-07-13T16:22:41",
+    "name": "IHEXDSpracticeSettingCodenondoctoral",
+    "title": "PracticeSetting non-doctoral",
+    "status": "active",
+    "experimental": false,
+    "publisher": "IHE Deutschland e.V.",
+    "description": "PracticeSetting non-doctoral",
+    "immutable": false,
+    "compose": {
+        "include": [
+            {
+                "system": "http://ihe-d.de/CodeSystems/NichtaerztlicheFachrichtungen",
+                "concept": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Ergotherapie unterst\u00fctzt und begleitet Menschen jeden Alters, die in ihrer Handlungsf\u00e4higkeit eingeschr\u00e4nkt oder von Einschr\u00e4nkung bedroht sind. Ziel ist, sie bei der Durchf\u00fchrung f\u00fcr sie bedeutungsvoller Bet\u00e4tigungen in den Bereichen Selbstversorgung, Produktivit\u00e4t und Freizeit in ihrer pers\u00f6nlichen Umwelt zu st\u00e4rken.Hierbei dienen spezifische Aktivit\u00e4ten, Umweltanpassung und Beratung dazu, dem Menschen Handlungsf\u00e4higkeit im Alltag, gesellschaftliche Teilhabe und eine Verbesserung seiner Lebensqualit\u00e4t zu erm\u00f6glichen. (Definition vom \"Deutschen\n                        Verband der Ergotherapeuten e.V.\")Typischerweise werden Dokumente, die von Angeh\u00f6rigen der folgenden Berufsgruppen erstellt werden, mit diesem Code versehen:* Ergotherapeutin/ Ergotherapeut"
+                            }
+                        ],
+                        "code": "ERG",
+                        "display": "Ergotherapie"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Deckt die T\u00e4tigkeiten folgender Berufe ab:* Di\u00e4tassistentin/ Di\u00e4tassistent* Di\u00e4tk\u00f6chin/ Di\u00e4tkoch* Ern\u00e4hrungsberaterin/ Ern\u00e4hrungsberater* Oekotrophologin/ Oekotrophologe* Diabetesassistentin/ Diabetesassistent* Diabetesberaterin/ Diabetesberater"
+                            }
+                        ],
+                        "code": "ERN",
+                        "display": "Ern\u00e4hrung und Di\u00e4tetik"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Deckt die T\u00e4tigkeiten folgender Berufe ab:* Clinical Trial Manager* Fachwissenschaftler/-innen in der Medizin* Klinischer Monitor* Studienassistentin/ Studienassistent* Study Nurse"
+                            }
+                        ],
+                        "code": "FOR",
+                        "display": "Forschung"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Pflege umfasst die eigenverantwortliche Versorgung und Betreuung, allein oder in Kooperation mit anderen Berufsangeh\u00f6rigen, von Menschen aller Altersgruppen, von Familien oder Lebensgemeinschaften, sowie von Gruppen und sozialen Gemeinschaften, ob krank oder gesund, in allen Lebenssituationen (Settings). Pflege schlie\u00dft die F\u00f6rderung der Gesundheit, Verh\u00fctung von Krankheiten und die Versorgung und Betreuung kranker, behinderter und sterbender Menschen ein. Weitere Schl\u00fcsselaufgaben der Pflege sind Wahrnehmung der Interessen und Bed\u00fcrfnisse (Advocacy),\n                        F\u00f6rderung einer sicheren Umgebung, Forschung, Mitwirkung in der Gestaltung der Gesundheitspolitik sowie im Management des Gesundheitswesens und in der Bildung. (Definition der Pflege vom \"International Council of Nurses ICN\" \u00fcbersetzt vom Deutschen Berufsverband f\u00fcr Pflegeberufe) Deckt die T\u00e4tigkeiten folgender Berufe ab: Pflegeassistent / Alltagsbetreuer (m/w) Servicehelfer im Sozial- und Gesundheitswesen (m/w) Wundexperte (m/w) Stomatherapeutin/ Stomatherapeut Heilerziehungspflegerin/ Heilerziehungspfleger Gesundheits- und Krankenpflegehelferin/ Gesundheits- und\n                        Krankenpflegehelfer Gesundheits- und Krankenpflegerin/ Gesundheits- und Krankenpfleger Gesundheits- und Pflegeassistentin/ Gesundheits- und Pflegeassistent Gesundheits- und Pflegeberaterin/ Gesundheits- und Pflegeberater Pflegesachverst\u00e4ndige/ Pflegesachverst\u00e4ndiger"
+                            }
+                        ],
+                        "code": "PFL",
+                        "display": "Pflege und Betreuung"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Altenpfleger und Altenpflegehelfer pflegen und versorgen gesunde, kranke und pflegebed\u00fcrftige alte Menschen. Neben den sozial-pflegerischen Aufgaben (z.B. Hilfe bei der K\u00f6rperpflege und beim Essen) kommen den Altenpflegern und Altenpflegehelfern auch medizinisch-pflegerische Aufgaben zu (z.B. Unterst\u00fctzung bei therapeutischen Ma\u00dfnahmen der Rehabilitation oder das Ausf\u00fchren \u00e4rztlicher Verordnungen wie das Wechseln von Verb\u00e4nden, das Verabreichen von Medikamenten). \u00a0(Definition der Gesundheitsberichterstattung des Bundes)Typischerweise werden\n                        Dokumente, die von Angeh\u00f6rigen der folgenden Berufsgruppen erstellt werden, mit diesem Code versehen:* Altenpflegerin/ Altenpfleger"
+                            }
+                        ],
+                        "code": "ALT",
+                        "display": "Altenpflege"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Die T\u00e4tigkeitsfelder der Gesundheits- und Kinderkrankenpflege umfassen: Die Gestaltung eines Entwicklungsf\u00f6rdernden Umfeldes, Beratung \u00fcber entsprechende Ma\u00dfnahmen und Gesundheitsaufkl\u00e4rung, Entlastung der pflegenden Angeh\u00f6rigen, physische und psychische Betreuung, Entwicklung von Krankheitskonzepten, Unterst\u00fctzung bei der Teilnahme am gesellschaftlichen Leben und Gutachtert\u00e4tigkeit. (Definition vom Berufsverband Kinderkrankenpflege Deutschland e.V.) Typischerweise werden Dokumente, die von Angeh\u00f6rigen der folgenden Berufsgruppen erstellt werden, mit\n                        diesem Code versehen: - Gesundheits- und Kinderkrankenpflegerin/ Gesundheits- und Kinderkrankenpfleger"
+                            }
+                        ],
+                        "code": "KIN",
+                        "display": "Kinderpflege"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Dieses Konzept kann zur Kennzeichnung der Herkunft von Dokumenten verwendet werden, die der Patient selbstst\u00e4ndig erstellt und eingestellt hat. Zum Beispiel \u00fcber ein Patientenportal oder eine Smartphone-App. Daten die vom Patienten \u00fcber eine solche L\u00f6sung stellvertretend f\u00fcr einen Heilberufler eingestellt werden (z.B. gescannter Arztbrief, DICOMDVD) sollten nicht dieses Konzept, sondern das Konzept, welches f\u00fcr den Heilberufler vorgesehen ist, verwenden."
+                            }
+                        ],
+                        "code": "PAT",
+                        "display": "Patient au\u00dferhalb der Betreuung"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Deckt die T\u00e4tigkeiten folgender Berufe ab:* Pharmakantin/ Pharmakant* Pharmakovigilantin/ Pharmakovigilant* Pharmazeutisch-kaufm\u00e4nnische Angestellte/ Pharmazeutisch-kaufm\u00e4nnischer Angestellter* Pharmazeutisch-technische Assistentin/ Pharmazeutisch-technischer Assistent\u00a0* Apothekerin/Apotheker"
+                            }
+                        ],
+                        "code": "PHZ",
+                        "display": "Pharmazeutik"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Podologie ist die (nicht-\u00e4rztliche) Fu\u00df-Heilkunde und wird von Podologen/Podologinnen praktiziert."
+                            }
+                        ],
+                        "code": "POD",
+                        "display": "Podologie"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Deckt die T\u00e4tigkeiten von Wellnessberatern und -beraterinnen ab; auch die T\u00e4tigkeiten von Fitnesstrainern au\u00dferhalb der medizinischen Rehabilitation oder der Sportmedizin sind durch dieses Konzept abgedeckt.Typischerweise werden Dokumente, die von Angeh\u00f6rigen der folgenden Berufsgruppen erstellt werden, mit diesem Code versehen:* Fitnessberaterin/ Fitnessberater* Fitnessmanagerin/ Fitnessmanager* Fitnesstrainerin/ Fitnesstrainer* Wellnessberaterin/ Wellnessberater* Wellnesstrainerin/ Wellnesstrainer"
+                            }
+                        ],
+                        "code": "PRV",
+                        "display": "Pr\u00e4vention"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Deckt die T\u00e4tigkeiten folgender Berufe ab:* Sozialarbeiterin / Sozialarbeiter* Sozialmedizinische Fachangestellte* Sozialp\u00e4dagogin/ Sozialp\u00e4dagoge* Sozialtherapeutin/ Sozialtherapeut* Compliance Coach, Adherence CoachWenn die T\u00e4tigkeit des Sozialdienstes eines Krankenhauses eindeutig einem \u00e4rztlichen Fachgebiet zugeordnet werden kann, sollte dieses bevorzugt verwendet werden."
+                            }
+                        ],
+                        "code": "SOZ",
+                        "display": "Sozialwesen"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Deckt die T\u00e4tigkeiten folgender Berufe ab:* Logop\u00e4din/ Logop\u00e4de* Medizinische Sprachheilp\u00e4dagogin/ Medizinischer Sprachheilp\u00e4dagoge* Staatlich anerkannte Sprachtherapeutin/ Staatlich anerkannter Sprachtherapeut"
+                            }
+                        ],
+                        "code": "SPR",
+                        "display": "Sprachtherapie"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Deckt die T\u00e4tigkeiten von Case Managern/Case Managerinnen ab."
+                            }
+                        ],
+                        "code": "VKO",
+                        "display": "Versorgungskoordination"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Deckt die T\u00e4tigkeiten folgender Berufe ab:* Medizincontrollerin/ Medizincontroller* Sekret\u00e4rin im Gesundheitswesen/ Sekret\u00e4r im Gesundheitswesen\u00a0* Sozialversicherungsfachangestellte/ Sozialversicherungsfachangestellter* Verwaltungsangestellte in medizinischen Pflegeeinrichtungen/ Verwaltungsangestellter in medizinischen PflegeeinrichtungenWenn diese T\u00e4tigkeiten eindeutig einem \u00e4rztlichen Fachgebiet zugeordnet werden k\u00f6nnen, sollte dieses bevorzugt verwendet werden."
+                            }
+                        ],
+                        "code": "VER",
+                        "display": "Verwaltung"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.465--20200206170113"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-02-06T17:01:13+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.465--20200206170113"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.465"/>
+    </identifier>
+    <version value="2020-02-06T17:01:13"/>
+    <name value="Codessozialgesetzbuch"/>
+    <title value="Codes Sozialgesetzbuch"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Deutschland e. V."/>
+    <contact>
+        <name value="HL7 Deutschland e. V."/>
+        <telecom>
+            <system value="phone"/>
+            <value value="T 0700 77 77 67 67"/>
+        </telecom>
+    </contact>
+    <description value="Spezialcodes für Konzepte im Rahmen des deutschen Sozialgesetzbuchs I-XII"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:1.2.276.0.76.5.509"/>
+            <concept>
+                <code value="HERZ"/>
+                <display value="Hilfen zur Erziehung nach SGB VIII"/>
+            </concept>
+            <concept>
+                <code value="HGES"/>
+                <display value="Hilfen zur Gesundheit nach SGB XII"/>
+            </concept>
+            <concept>
+                <code value="HPFL"/>
+                <display value="Hilfe zur Pflege nach SGB XII"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

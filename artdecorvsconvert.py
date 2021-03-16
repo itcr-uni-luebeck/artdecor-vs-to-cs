@@ -87,7 +87,8 @@ def filter_code_system(jcs: ArtDecorCodeSystem) -> bool:
                        "2.16.840.1.113883.6.88": "RxNorm",
                        "2.16.840.1.113883.5.25": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
                        "1.2.840.10008": "DICOM DCM and DCM-based ValueSets",
-                       "1.3.6.1.4.1.19376.1.2.3": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"
+                       "1.3.6.1.4.1.19376.1.2.3": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                       "1.2.276.0.76.5.114": "KBV Schluesseltabelle S_BAR2_WBO"
                        }
     if any(jcs.oid.startswith(f) for f in filterable_oids.keys()):
         return True

@@ -1,7 +1,9 @@
+from enum import unique
 from logging import error
 from click.termui import prompt
 from fhir.resources.codesystem import CodeSystem, CodeSystemConcept, CodeSystemConceptDesignation, CodeSystemConceptProperty, CodeSystemProperty, CodeSystemFilter
 from fhir.resources.fhirtypes import IdentifierType
+from pydantic.utils import unique_list
 import requests
 import click
 import validators
@@ -27,6 +29,19 @@ class ArtDecorCodeSystem:
         return f"CS[oid='{self.oid}', name='{self.name}', canonical='{self.canonical}']"
 
 
+def sanitize_alphanumerical(instr: str) -> str:
+    """remove all non-alphanumerical characters (excluding dashes and dots), and replace them with dashes.
+
+    Args:
+        instr (str): the input string
+
+    Returns:
+        str: the sanitized string
+
+    """
+    return re.sub(r"[^A-Za-z0-9\-.]", "-", instr)
+
+
 def canonical_for_code_system(jcs: Dict) -> str:
     """get the canonical URL for a code system entry from the art decor json. Prefer FHIR URIs over the generic OID URI.
 
@@ -48,13 +63,13 @@ def initialize_code_system(jcs: ArtDecorCodeSystem, version: str, vs_date: str) 
     Args:
         jcs (ArtDecorCodeSystem): the Art decor code system json
         version (str): the version (of the valueset) to use for the code system
+        vs_date (str): the date string in the ValueSet
 
     Returns:
         CodeSystem: the initialized R4 CodeSystem
     """
     dic = {
-        "id": f"{jcs.oid}-{version}",
-        "name": jcs.name,
+        "id": sanitize_alphanumerical(f"{jcs.oid}-{version}"),
         "url": jcs.canonical,
         "valueSet": f"{jcs.canonical}?vs",
         "identifier": [{
@@ -63,10 +78,12 @@ def initialize_code_system(jcs: ArtDecorCodeSystem, version: str, vs_date: str) 
         }],
         "content": "complete",
         "status": "draft",
-        "version": version,
+        "version": sanitize_alphanumerical(version),
         "date": vs_date,
         "concept": []
     }
+    if jcs.name != "":
+        dic["name"] = jcs.name
     cs = CodeSystem(**dic)
     return cs
 
@@ -85,7 +102,7 @@ def filter_code_system(jcs: ArtDecorCodeSystem) -> bool:
                        "2.16.840.1.113883.6.96": "SNOMED CT",
                        "2.16.840.1.113883.6.8": "UCUM",
                        "2.16.840.1.113883.6.88": "RxNorm",
-                       "2.16.840.1.113883.5.25": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                       "2.16.840.1.113883.5": "HL7 International Terminologies",
                        "1.2.840.10008": "DICOM DCM and DCM-based ValueSets",
                        "1.3.6.1.4.1.19376.1.2.3": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
                        "1.2.276.0.76.5.114": "KBV Schluesseltabelle S_BAR2_WBO"
@@ -131,7 +148,7 @@ def prompt_for_parent_code(concept: Dict, concept_list: List[Dict]) -> str:
     this_level = int(concept["level"])
     assert(this_level > 0)
     possible_specializable_concepts = [
-        c for c in concept_list if c["type"] == "S"]
+        c for c in concept_list if c["type"] == "S" or c["type"] == "A"]
     possible_from_cs = [
         c for c in possible_specializable_concepts if c["codeSystem"] == concept["codeSystem"]]
     choices = [c for c in possible_from_cs if c["code"] !=
@@ -172,10 +189,18 @@ def convert_to_fhir_codesystems(j: Dict, behaviour: str):
         j (Dict): the ArtDecor ValueSet dictionary
     """
     vs = j["valueSet"][0]
-    vs_name = vs["name"]
+    if "name" in vs and vs["name"] != "":
+        vs_name = vs["name"]
+    elif "identifierName" in vs and vs["identifierName"] != "":
+        vs_name = vs["identifierName"]
+    else:
+        vs_name = ""
     vs_oid = vs["id"]
-    vs_version = vs["versionLabel"]
     vs_date = vs["effectiveDate"]
+    if "versionLabel" in vs:
+        vs_version = vs["versionLabel"]
+    else:
+        vs_version = "draft"
     click.echo(
         f"Converting the ValueSet '{vs_name}' (version '{vs_version}' with the OID {vs_oid})")
     all_present_code_systems = {x["id"]: ArtDecorCodeSystem(
@@ -201,6 +226,11 @@ def convert_to_fhir_codesystems(j: Dict, behaviour: str):
     fhir_codesystem_has_deprecated_codes = {
         oid: False for oid in present_code_systems.keys()
     }
+
+    if not "conceptList" in vs:
+        click.echo(
+            "The provided VS is defined wholly intensional, with no codes being defined or picked from existing CS. Not converting.")
+        return {}
 
     concept_list = vs["conceptList"][0]["concept"]
     for concept in concept_list:
@@ -335,24 +365,31 @@ def merge_fhir_json(filepath: str, new_cs: CodeSystem):
                    ',\n  '.join(validation_errors),
                    err=True, color=True)
         return None
+    new_codes = list(c.code for c in new_cs.concept)
     concept_missing_in_existing = [
         concept for concept in existing_cs.concept
-        if concept.code not in [c.code for c in new_cs.concept]
+        if concept.code not in new_codes
     ]
     if len(concept_missing_in_existing) > 0:
         click.echo("codes missing in the existing CodeSystem: " +
                    ", ".join(f"'{c.code}'='{c.display}'" for c in concept_missing_in_existing))
+        click.echo("")
+    existing_codes = list(c.code for c in existing_cs.concept)
     concept_missing_in_new = [
         concept for concept in new_cs.concept
-        if concept.code not in [c.code for c in existing_cs.concept]
+        if concept.code not in existing_codes
     ]
     if len(concept_missing_in_new) > 0:
         click.echo("codes missing in the new CodeSystem: " +
                    ", ".join(f"'{c.code}'='{c.display}'" for c in concept_missing_in_new))
+        click.echo("")
+    all_codes = unique_list(new_codes + existing_codes)
+    common_codes = list(
+        c for c in all_codes if c in existing_codes and c in new_codes)
     concepts_in_both_old = {
-        c.code: c for c in existing_cs.concept if c not in concept_missing_in_new}
+        c.code: c for c in existing_cs.concept if c in common_codes}
     concepts_in_both_new = {
-        c.code: c for c in new_cs.concept if c not in concept_missing_in_existing}
+        c.code: c for c in new_cs.concept if c in common_codes}
     merge_errors = []
     for code in concepts_in_both_old.keys():
         assert(code in concepts_in_both_new.keys())
